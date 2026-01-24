@@ -1,7 +1,12 @@
-getName();
-console.log(x);
-console.log(getName);
-var x = 7;
-function getName(){
-    console.log('hello');
+setTimeout(function (){
+    console.log("Timer");
+}, 5000);
+
+function x(y){
+    console.log("X");
+    y();
 }
+
+x(function y(){
+    console.log("Y");
+});
