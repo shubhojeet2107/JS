@@ -1,12 +1,9 @@
-setTimeout(function (){
-    console.log("Timer");
-}, 5000);
-
-function x(y){
-    console.log("X");
-    y();
+function getData(){
+    if([] == true){
+        console.log("Absent");
+    }else{
+        console.log("Present");
+    }
 }
 
-x(function y(){
-    console.log("Y");
-});
+getData();
